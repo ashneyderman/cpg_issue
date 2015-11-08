@@ -20,7 +20,7 @@ true
 <0.107.0>
 ```
 
-Killing the processes that are registered via cpg causes VM to shutdown. Here is the shell output:
+Killing any but the last processes that is registered via cpg causes VM to shutdown. Here is the shell output:
 ```
 (experiments@127.0.0.1)9> cpg:get_members(test_scope, "zippo").
 {ok,"zippo",[<0.54.0>,<0.55.0>]}
