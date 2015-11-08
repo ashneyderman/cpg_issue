@@ -5,7 +5,7 @@ to run this project -
 make run
 
 These beahve as expected -
-
+```
 (experiments@127.0.0.1)3> whereis(zippo1).            
 <0.98.0>
 (experiments@127.0.0.1)4> exit(whereis(zippo1), kill).
@@ -42,3 +42,4 @@ Child (unknown) crashed exiting:  <0.74.0> shutdown
 Crash dump is being written to: erl_crash.dump...done
 Kernel pid terminated (application_controller) ({application_terminated,experiments,shutdown})
 make: *** [run] Error 1
+```
