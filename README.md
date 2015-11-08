@@ -1,10 +1,10 @@
-# cpg_issue
+To make and run the project
 
-to run this project -
-
+```
 make run
+```
 
-These beahve as expected -
+Then from the shell try to kill local processes that are not registered via cpg. They behave as I'd expect. Here is the shell output:
 ```
 (experiments@127.0.0.1)3> whereis(zippo1).            
 <0.98.0>
@@ -20,7 +20,7 @@ true
 <0.107.0>
 ```
 
-These misbehave
+Killing the processes that are registered via cpg causes VM to shutdown. Here is the shell output:
 ```
 (experiments@127.0.0.1)9> cpg:get_members(test_scope, "zippo").
 {ok,"zippo",[<0.54.0>,<0.55.0>]}
