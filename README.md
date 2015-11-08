@@ -18,7 +18,10 @@ true
 true
 (experiments@127.0.0.1)8> whereis(zippo2).            
 <0.107.0>
+```
 
+These misbehave
+```
 (experiments@127.0.0.1)9> cpg:get_members(test_scope, "zippo").
 {ok,"zippo",[<0.54.0>,<0.55.0>]}
 (experiments@127.0.0.1)10> exit(pid(0,55,0), kill).             
